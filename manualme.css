@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    background-image: url("manual.png");
+    width: 100%;
+    min-height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(25, 34, 65, 0.644);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.main {
+    background-color:rgba(156, 185, 190, 0.486);
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.paragraph {
+    display: inline-block;
+    padding: 5px;
+    width:30%;
+    color:rgb(15, 61, 66);
+}
+
+h2 {
+    color:rgb(20, 55, 83);
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1500px) {
+    .paragraph {
+      width: 20%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .paragraph {
+      width: 45%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .paragraph {
+      width: 90%;
+    }
+
+    .header{
+        background-image: url("manualmob.png");
+    }
+
+}
